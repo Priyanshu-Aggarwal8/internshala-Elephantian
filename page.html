@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Loading Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstyles.css">
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-blue-300">
+
+    <div class="clouds">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+    </div>
+
+    <div id="preloader" class="fixed inset-0 flex items-center justify-center backdrop-blur-lg z-50">
+        <div class="logo-container text-center">
+            <img src="https://static.vecteezy.com/system/resources/previews/014/489/573/large_2x/blue-fire-logo-design-free-vector.jpg" alt="Logo" id="logo" class="w-32 h-32 cursor-pointer hover:scale-110 transition-transform duration-300">
+            <p class="mt-4 text-xl font-semibold text-gray-700 animate-bounce">Click to Enter</p>
+        </div>
+    </div>
+    
+    <div id="content" class="hidden">
+        <h1 class="text-5xl font-bold text-center mt-20 text-blue-900">Welcome to the Homepage</h1>
+        <p class="text-xl text-center mt-4 text-gray-800">Discover amazing content here.</p>
+    </div>
+
+    <script src="bootscript.js"></script>
+</body>
+</html>
